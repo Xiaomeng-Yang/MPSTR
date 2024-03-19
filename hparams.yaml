@@ -1,0 +1,33 @@
+charset_train: 0123456789abcdefghijklmnopqrstuvwxyz
+charset_test: 0123456789abcdefghijklmnopqrstuvwxyz
+max_label_length: 25
+batch_size: 384
+lr: 0.00062
+warmup_pct: 0.05
+weight_decay: 0.0001
+img_size:
+- 32
+- 128
+patch_size:
+- 4
+- 8
+embed_dim: 384
+enc_num_heads: 6
+enc_mlp_ratio: 4
+enc_depth: 12
+dec_num_heads: 12
+dec_mlp_ratio: 4
+dec_depth: 1
+perm_num: 12
+perm_forward: true
+perm_mirrored: true
+decode_ar: true
+dropout: 0.1
+len_token: true
+len_ratio: 0.25
+use_gt: true
+refine_iters: 1
+top_k: 1
+mlm_iters: 5
+name: mpnet_crossattn
+pad_ratio: 1.0

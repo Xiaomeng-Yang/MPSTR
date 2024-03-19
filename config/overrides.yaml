@@ -1,0 +1,11 @@
+- charset=91_newdata
+- trainer.gpus=2
+- model=mpnet
+- model.name=mpnet_newdata_disturb50
+- trainer.max_epochs=10
+- model.perm_num=12
+- model.warmup_pct=0.05
+- model.lr=4e-4
+- model.weight_decay=1e-4
+- data.root_dir=/home/test13/yxm/data/Union14M-L/Benchmark_lmdb/
+- data.train_dir=all
